@@ -1,0 +1,7 @@
+trabajo,работа
+hombre,мужчина
+mujer,женщина
+gato,кот
+perro,собака
+uno,один
+grande,большой
