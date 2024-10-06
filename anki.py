@@ -26,19 +26,19 @@ class Anki:
         for card in self.cards:
             if card.word == word:
                 return card
-        raise ValueError("Unknown Word")
+        raise ValueError('Unknown Word')
     
     def get_random_card(self) -> Card:
         return random.choice(self.cards)
     
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     anki = Anki()
 
-    anki.add_card("gato", "кот")
+    anki.add_card('gato', 'кот')
 
-    card = anki.get_card("gato")
+    card = anki.get_card('gato')
 
-    assert card.word == "gato", "Ошибка 1"
-    assert card.word == "кот", "Ошибка 2"
+    assert card.word == 'gato', 'Ошибка 1'
+    assert card.word == 'кот', 'Ошибка 2'
 
