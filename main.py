@@ -13,7 +13,7 @@ def get_loader(extension: str) -> type[TextCardLoader] | type[JsonCardLoader]:
     elif extension == '.json':
         loader = JsonCardLoader
     else:
-        raise ValueError(f"Unknown file format {extension}")
+        raise ValueError(f'Unknown file format {extension}')
     return loader
 
 
@@ -33,5 +33,5 @@ def main():
         ui.mainloop()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
